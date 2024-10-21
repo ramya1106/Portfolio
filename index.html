@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.10/base.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a32b9bd18e.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="lg:px-[220px] px-[40px]">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-[#0A192F] fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#AboutSection">
+                <img src="https://res.cloudinary.com/dn9sdbv1o/image/upload/v1729314611/image_2024-10-19_095531513-removebg-preview_blv4ma.png" class="w-20" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse visible navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-lg-auto ml-sm-3">
+                    <a class="text-[#b0bcc8] hover:text-[#d1dae3] hover:no-underline lg:ml-0 ml-4 lg:mr-4 pb-3 lg:pb-0" href="#AboutSection">About</a>
+                    <a class="text-[#b0bcc8] hover:text-[#d1dae3] hover:no-underline lg:ml-0 ml-4 lg:mr-4 pb-3 lg:pb-0" href="#SkillsSection">Skills</a>
+                    <a class="text-[#b0bcc8] hover:text-[#d1dae3] hover:no-underline lg:ml-0 ml-4 lg:mr-4 pb-3 lg:pb-0" href="#ProjectsSection">Projects</a>
+                    <a class="text-[#b0bcc8] hover:text-[#d1dae3] hover:no-underline lg:ml-0 ml-4 lg:mr-4 pb-3 lg:pb-0" href="#EduExpSection">Education & Experience</a>
+                    <a class="text-[#b0bcc8] hover:text-[#d1dae3] hover:no-underline lg:ml-0 ml-4 lg:mr-4 pb-3 lg:pb-0" href="#CertificatesSection">Certificates</a>
+                    <a class="text-[#b0bcc8] hover:text-[#d1dae3] hover:no-underline lg:ml-0 ml-4 lg:mr-4" href="#ContactSection">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Left Side Bar -->
+    <div class="flex flex-col fixed left-20 bottom-0 z-10 hidden lg:flex">
+        <!-- icons -->
+        <div class="flex flex-col space-y-4 mb-4">
+            <!-- LinkedIn -->
+            <div>
+                <a href="https://www.linkedin.com/in/ramyasree-m/" target="_blank">
+                    <i class="fa-brands fa-linkedin text-[#b0bcc8] text-xl cursor-pointer"></i>
+                </a>
+            </div>
+            <!-- GitHub -->
+            <div>
+                <a href="https://github.com/ramya1106" target="_blank">
+                    <i class="fa-brands fa-github text-[#b0bcc8] text-xl cursor-pointer"></i>
+                </a>
+            </div>
+            <!-- Email -->
+            <div>
+                <a href="mailto:mramya0406@gmail.com" target="_blank">
+                    <i class="fa-solid fa-envelope text-[#b0bcc8] text-xl cursor-pointer"></i>
+                </a>
+            </div>
+        </div>
+        <!-- Bar -->
+        <div class="h-40 w-[2px] bg-[#b0bcc8] mx-auto"></div>
+    </div>
+    <!-- Right Side Bar -->
+    <div class="flex flex-col fixed right-20 top-18 z-10 hidden lg:flex">
+        <!-- Bar -->
+        <div class="h-52 w-[2px] bg-[#b0bcc8] mx-auto"></div>
+        <!-- Email -->
+        <div class="text-[#b0bcc8] flex flex-col space-y-4 mt-2 vertical-text">
+            <span class="tracking-widest">mramya0406@gmail.com</span>
+        </div>
+    </div>
+
+
+
+    <!-- About Section -->
+    <section id="AboutSection">
+        <div class="flex items-center pb-[80px] pt-[160px] lg:pt-[250px] lg:pb-[125px] lg:justify-between">
+            <div class="lg:w-2/3 w-[90%] space-y-4">
+                <h1 class="text-[#64FFDA] lg:text-5xl text-3xl font-semibold">Ramya Sree Mamidi</h1>
+                <div class="inner-container">
+                    <h1 class="text-[#b0bcc8] lg:text-3xl mt-1 lg:mt-0 text-xl">I'm a</h1>
+                    <div class="dynamic-txt text-[#b0bcc8] lg:text-3xl text-xl font-medium">
+                        <li><span>Passionate Developer</span></li>
+                        <li><span>UI/UX Enthusiast</span></li>
+                        <li><span>BTech Student</span></li>
+                        <li><span>Web Developer</span></li>
+                    </div>
+                </div>
+                <p class="text-[#b0bcc8] lg:text-xl text-medium lg:w-[98%]">I’m a 2nd-year BTech student at Narayana Engineering College and a
+                    dedicated learner at NxtWave Academy, focusing on full-stack development. I’m passionate
+                    about web development and aspire to build my career in it. Through various projects and
+                    leadership roles, I've gained hands-on experience in web technologies and enhanced my
+                    ability to lead and collaborate in teams.</p>
+                <!-- Created path using tiiny.host -->
+                <div>
+                    <a href="https://silver-kalinda-20.tiiny.site" target="_blank">
+                        <button class="bg-[#0A192F] text-[#64FFDA] border-2 border-[#64FFDA] py-2 px-4 rounded transition duration-300 hover:bg-[#3F8C9A] hover:text-white">
+                            Check out my resume
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="relative hidden lg:block">
+                <img src="https://res.cloudinary.com/dn9sdbv1o/image/upload/v1729327883/ed92756c-c014-4f93-b99d-294ba2743106_gh932z.jpg" class="h-52 rounded-full absolute bottom-3 right-8 transition-all duration-300 ease-in-out hover:top-1 hover:left-1 hover:h-56">
+                <p class="p-28 border-4 rounded-full border-[#243c5a]"></p>
+            </div>
+        </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="SkillsSection" class="pt-[80px] pb-[80px] lg:pb-[125px] lg:pt-[125px]">
+        <h1 class="text-[#64FFDA] lg:text-4xl text-3xl font-semibold">Skills</h1>
+        <div class="flex flex-wrap">
+            <div class="hover:bg-[#2c3e50] transition duration-300 p-2 mr-4 my-4 relative text-center rounded-3xl">
+                <img src="https://res.cloudinary.com/dn9sdbv1o/image/upload/v1729337940/html-removebg-preview_lxgzsv.png" class="w-28" alt="HTML">
+                <p class="text-[#b0bcc8] font-medium text-medium">HTML</p>
+            </div>
+            <div class="hover:bg-[#2c3e50] transition duration-300 p-2 mr-4 my-4 relative text-center rounded-3xl">
+                <img src="https://res.cloudinary.com/dn9sdbv1o/image/upload/v1729475782/css-logo_xuhqub.png" class="w-28" alt="CSS">
+                <p class="text-[#b0bcc8] font-medium text-medium">CSS</p>
+            </div>
+            <div class="hover:bg-[#2c3e50] transition duration-300 p-2 mr-4 my-4 relative text-center rounded-3xl">
+                <img src="https://res.cloudinary.com/dn9sdbv1o/image/upload/v1729337940/bootstrap-removebg-preview_t4ucln.png" class="w-28" alt="Bootstrap">
+                <p class="text-[#b0bcc8] font-medium text-medium">Bootstrap</p>
+            </div>
+            <div class="hover:bg-[#2c3e50] transition duration-300 p-2 mr-4 my-4 relative text-center rounded-3xl">
+                <img src="https://res.cloudinary.com/dn9sdbv1o/image/upload/v1729337940/tailwind_css-removebg-preview_bhqih8.png" class="w-28" alt="Tailwind CSS">
+                <p class="text-[#b0bcc8] font-medium text-medium">Tailwind CSS</p>
+            </div>
+            <div class="hover:bg-[#2c3e50] transition duration-300 p-2 mr-4 my-4 relative text-center rounded-3xl">
+                <img src="https://res.cloudinary.com/dn9sdbv1o/image/upload/v1729476615/SQL-logo_aoj8na.png" class="w-28" alt="SQL">
+                <p class="text-[#b0bcc8] font-medium text-medium">SQL</p>
+            </div>
+            <div class="hover:bg-[#2c3e50] transition duration-300 p-2 mr-4 my-4 relative text-center rounded-3xl">
+                <img src="https://res.cloudinary.com/dn9sdbv1o/image/upload/v1729338956/python-removebg-preview_ppmma2.png" class="w-28" alt="Python">
+                <p class="text-[#b0bcc8] font-medium text-medium">Python</p>
+            </div>
+            <div class="hover:bg-[#2c3e50] transition duration-300 p-2 mr-4 my-4 relative text-center rounded-3xl">
+                <img src="https://res.cloudinary.com/dn9sdbv1o/image/upload/v1729476000/c_logo_1_p3emxh.png" class="w-28" alt="C">
+                <p class="text-[#b0bcc8] font-medium text-medium">C</p>
+            </div>
+            <div class="hover:bg-[#2c3e50] transition duration-300 p-2 mr-4 my-4 relative text-center rounded-3xl">
+                <img src="https://res.cloudinary.com/dn9sdbv1o/image/upload/v1729476321/github__2_-removebg-preview_gozttr.png" class="w-28" alt="Github">
+                <p class="text-[#b0bcc8] font-medium text-medium">Github</p>
+            </div>
+            <div class="hover:bg-[#2c3e50] transition duration-300 p-2 mr-4 my-4 relative text-center rounded-3xl">
+                <img src="https://res.cloudinary.com/dn9sdbv1o/image/upload/v1729476479/canva__1_-removebg-preview_lnnueq.png" class="w-28" alt="Canva">
+                <p class="text-[#b0bcc8] font-medium text-medium">Canva</p>
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="ProjectsSection">
+        <div class="pt-[80px] pb-[80px] lg:pt-[125px] lg:pb-[125px]">
+            <h1 class="text-[#64FFDA] lg:text-4xl text-3xl font-semibold">Projects</h1>
+            <!-- Project 1 -->
+            <div class="mt-5 lg:flex lg:relative space-y-2 lg:space-y-0">
+                <img src="https://res.cloudinary.com/dn9sdbv1o/image/upload/v1729360856/Leaderboard-gdg_kostlp.png" class="w-[100%] lg:w-[56%] bg-[#0A192F] opacity-50 hover:opacity-100 rounded-lg" alt="project-1">
+                <div class="lg:w-[44%] lg:text-right space-y-2 lg:space-y-4">
+                    <div class="mt-sm-2">
+                        <p class="text-[#64FFDA] text-md font-semibold">GDG Contribution</p>
+                        <h1 class="text-[#b0bcc8] font-semibold text-2xl lg:text-3xl">Performance Leaderboard</h1>
+                    </div>
+                    <div class="bg-[#112240] p-3 lg:w-[60%] right-[-16px] rounded-xl lg:absolute">
+                        <p class="text-[#b0bcc8] text-[17px] text-left">Developed an interactive student
+                            leaderboard that enables users to view and search through rankings of top
+                            performers. The project features a clean, user-friendly interface, enhancing
+                            the experience of tracking student achievements and fostering healthy
+                            competition.</p>
+                    </div>
+                    <div class="lg:pt-[146px] space-x-5">
+                        <span class="text-[#b0bcc8] text-[14px] font-semibold">HTML</span>
+                        <span class="text-[#b0bcc8] text-[14px] font-semibold">CSS</span>
+                        <span class="text-[#b0bcc8] text-[14px] font-semibold">Bootstrap</span>
+                        <span class="text-[#b0bcc8] text-[14px] font-semibold">JQuery</span>
+                    </div>
+                    <div class="flex lg:justify-end">
+                        <a href="https://gdgleaderboard.ccbp.tech/" target="_blank">
+                            <i class="fa-solid fa-arrow-up-right-from-square w-5 text-[#64FFDA]"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="pt-[70px] lg:pt-[120px] flex lg:relative flex-col-reverse lg:flex-row">
+                <div class="lg:w-[44%] lg:text-left space-y-2 lg:-y-4 z-10">
+                    <div class="mt-sm-2">
+                        <p class="text-[#64FFDA] text-md font-semibold">Web Replica</p>
+                        <h1 class="text-[#b0bcc8] font-semibold text-2xl lg:text-3xl">Uber Clone</h1>
+                    </div>
+                    <div class="bg-[#112240] p-3 lg:w-[60%] left-[-16px] rounded-xl lg:absolute">
+                        <p class="text-[#b0bcc8] text-[17px]">Created a highly accurate replica of
+                            Uber's landing page, focusing on the design and structure. This project enhanced
+                            my understanding of web development practices and reinforced my skills in
+                            building user-friendly interfaces.</p>
+                    </div>
+                    <div class="lg:pt-[120px] space-x-5">
+                        <span class="text-[#b0bcc8] text-[14px] font-semibold">HTML</span>
+                        <span class="text-[#b0bcc8] text-[14px] font-semibold">CSS</span>
+                    </div>
+                    <div class="flex lg:justify-start">
+                        <a href="https://uberclonemrs.ccbp.tech/" target="_blank">
+                            <i class="fa-solid fa-arrow-up-right-from-square w-5 text-[#64FFDA]"></i>
+                        </a>
+                    </div>
+                </div>
+                <img src="https://res.cloudinary.com/dn9sdbv1o/image/upload/v1729349068/Uber_zvufpl.png" class="mb-sm-1 w-[100%] lg:w-[56%] bg-[#0A192F] opacity-50 hover:opacity-100 rounded-lg" alt="project-2">
+            </div>
+
+            <!-- Project 3 -->
+            <div class="pt-[70px] lg:pt-[120px] lg:flex lg:relative space-y-2 lg:space-y-0">
+                <img src="https://res.cloudinary.com/dn9sdbv1o/image/upload/v1729349069/Netflix_ob6os1.png" class="w-[100%] lg:w-[56%] bg-[#0A192F] opacity-50 hover:opacity-100 rounded-lg" alt="project-3">
+                <div class="lg:w-[44%] lg:text-right space-y-2 lg:space-y-4 mt-sm-2">
+                    <div>
+                        <p class="text-[#64FFDA] text-md font-semibold">Web Replica</p>
+                        <h1 class="text-[#b0bcc8] font-semibold text-2xl lg:text-3xl">Netflix Clone</h1>
+                    </div>
+                    <div class="bg-[#112240] p-3 lg:w-[60%] right-[-16px] rounded-xl lg:absolute">
+                        <p class="text-[#b0bcc8] text-[17px] text-left">Developed a near-exact replica of the Netflix interface, meticulously capturing
+                            its design, layout, and user experience elements. This project allowed me to apply
+                            the knowledge I gained in web technologies effectively.</p>
+                    </div>
+                    <div class="lg:pt-[120px] space-x-5">
+                        <span class="text-[#b0bcc8] text-[14px] font-semibold">HTML</span>
+                        <span class="text-[#b0bcc8] text-[14px] font-semibold">CSS</span>
+                    </div>
+                    <div class="flex lg:justify-end">
+                        <a href="https://netflixclonemrs.ccbp.tech/" target="_blank">
+                            <i class="fa-solid fa-arrow-up-right-from-square w-5 text-[#64FFDA]"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="pt-[70px] lg:pt-[120px] flex lg:relative flex-col-reverse lg:flex-row">
+                <div class="lg:w-[44%] lg:text-left space-y-2 lg:space-y-4 z-10 mt-sm-3">
+                    <div>
+                        <p class="text-[#64FFDA] text-md font-semibold">Hackathon Project</p>
+                        <h1 class="text-[#b0bcc8] font-semibold text-2xl lg:text-3xl">NxtGenHealth</h1>
+                    </div>
+                    <div class="bg-[#112240] p-3 lg:w-[60%] left-[-16px] rounded-xl lg:absolute">
+                        <p class="text-[#b0bcc8] text-[17px]">Created a system that assesses health using
+                            parameters like blood pressure, BMI, glucose level etc. It classifies risks into
+                            No, Low, and High Risk categories, provides personalized recommendations, including
+                            health tips, and generates a detailed downloadable PDF report for users.</p>
+                    </div>
+                    <div class="lg:pt-[140px] space-x-5">
+                        <span class="text-[#b0bcc8] text-[14px] font-semibold">HTML</span>
+                        <span class="text-[#b0bcc8] text-[14px] font-semibold">CSS</span>
+                        <span class="text-[#b0bcc8] text-[14px] font-semibold">Bootstrap</span>
+                        <span class="text-[#b0bcc8] text-[14px] font-semibold">Python & its Libraries</span>
+                    </div>
+                    <div class="flex lg:justify-start">
+                        <a href="https://github.com/Badhrinadhgvs/NxtGenHealth" target="_blank">
+                            <i class="fa-solid fa-arrow-up-right-from-square w-5 text-[#64FFDA]"></i>
+                        </a>
+                    </div>
+                </div>
+                <img src="https://res.cloudinary.com/dn9sdbv1o/image/upload/v1729349068/NxtGenHealth_f0xkdo.png" class="w-[100%] lg:w-[56%] bg-[#0A192F] opacity-50 hover:opacity-100 rounded-lg mb-sm-1" alt="project-4">
+            </div>
+
+            <!-- Project 5 -->
+            <div class="pt-[70px] lg:pt-[120px] lg:flex lg:relative space-y-2 lg:space-y-0">
+                <img src="https://res.cloudinary.com/dn9sdbv1o/image/upload/v1729360464/E-commerce_ouhmir.png" class="w-[100%] lg:w-[56%] bg-[#0A192F] opacity-50 hover:opacity-100 rounded-lg" alt="project-5">
+                <div class="lg:w-[44%] lg:text-right space-y-2 lg:space-y-4">
+                    <div>
+                        <p class="text-[#64FFDA] text-md font-semibold">Hands-on Project</p>
+                        <h1 class="text-[#b0bcc8] font-semibold text-2xl lg:text-3xl">Ecommerce Website</h1>
+                    </div>
+                    <div class="bg-[#112240] p-3 lg:w-[60%] right-[-16px] rounded-xl lg:absolute">
+                        <p class="text-[#b0bcc8] text-[17px] text-left">Developed a responsive e-commerce
+                            website inspired by Amazon & Flipkart. It includes sections for services,
+                            products, offers, trending blogs, and a comprehensive footer. The website enhances
+                            user experience with features like a navbar, modal, and carousel for seamless
+                            navigation.</p>
+                    </div>
+                    <div class="lg:pt-[144px] space-x-5">
+                        <span class="text-[#b0bcc8] text-[14px] font-semibold">HTML</span>
+                        <span class="text-[#b0bcc8] text-[14px] font-semibold">CSS</span>
+                        <span class="text-[#b0bcc8] text-[14px] font-semibold">Bootstrap</span>
+                    </div>
+                    <div class="flex lg:justify-end">
+                        <a href="https://ecommercemrs.ccbp.tech/" target="_blank">
+                            <i class="fa-solid fa-arrow-up-right-from-square w-5 text-[#64FFDA]"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Education & Experience -->
+    <section id="EduExpSection">
+        <div class="pt-[0px] pb-[80px] lg:pb-[125px] lg:pt-[45px] lg:flex justify-center lg:justify-around">
+            <!-- Education -->
+            <div class="flex flex-col mt-[80px]">
+                <!-- Heading -->
+                <div class="flex items-center mb-3">
+                    <i class="fa-solid fa-school text-[#64FFDA] text-[26px] mr-3"></i>
+                    <h1 class="text-[#64FFDA] text-[26px] font-semibold">Education</h1>
+                </div>
+                <!-- NxtWave -->
+                <div class="flex">
+                    <!-- Timeline -->
+                    <div class="relative flex flex-col items-center mr-6">
+                        <!-- Dot-->
+                        <div class="absolute top-1/2 transform -translate-y-1/2 w-2 h-2 bg-[#64FFDA] rounded-full"></div>
+                        <!-- Vertical Line -->
+                        <div class="absolute top-0 bottom-0 w-px bg-[#64FFDA]"></div>
+                    </div>
+                    <!-- Card -->
+                    <div class="bg-[#112240] p-3 mb-3 lg:m-3 lg:h-[150px] rounded-xl lg:w-[400px]">
+                        <div class="lg:flex lg:justify-between mb-3">
+                            <h1 class="text-[#64FFDA] text-xl font-semibold">NxtWave</h1>
+                            <p class="text-[#b0bcc8] text-md">2023 - Present</p>
+                        </div>
+                        <p class="text-[#b0bcc8] text-md">Focused on Full Stack Development & 4.0 Technologies</p>
+                    </div>
+                </div>
+
+                <!-- BTech -->
+                <div class="flex">
+                    <!-- Timeline -->
+                    <div class="relative flex flex-col items-center mr-6">
+                        <!-- Dot-->
+                        <div class="absolute top-1/2 transform -translate-y-1/2 w-2 h-2 bg-[#64FFDA] rounded-full"></div>
+                        <!-- Vertical Line -->
+                        <div class="absolute top-0 bottom-0 w-px bg-[#64FFDA]"></div>
+                    </div>
+                    <!-- Card -->
+                    <div class="bg-[#112240] p-3 mb-3 lg:m-3 lg:h-[150px] rounded-xl lg:w-[400px]">
+                        <div class="lg:flex lg:justify-between mb-3">
+                            <h1 class="text-[#64FFDA] text-xl font-semibold">Bachelor of Technology</h1>
+                            <p class="text-[#b0bcc8] text-md">2023 - 2027</p>
+                        </div>
+                        <p class="text-[#b0bcc8] text-md">Narayana Engineering College, Nellore</p>
+                        <p class="text-[#b0bcc8] text-md">Grade: 9.9 GPA</p>
+                    </div>
+                </div>
+
+                <!-- Higher Secondary Education -->
+                <div class="flex">
+                    <!-- Timeline -->
+                    <div class="relative flex flex-col items-center mr-6">
+                        <!-- Dot-->
+                        <div class="absolute top-1/2 transform -translate-y-1/2 w-2 h-2 bg-[#64FFDA] rounded-full"></div>
+                        <!-- Vertical Line -->
+                        <div class="absolute top-0 bottom-0 w-px bg-[#64FFDA]"></div>
+                    </div>
+                    <!-- Card -->
+                    <div class="bg-[#112240] p-3 mb-3 lg:m-3 lg:h-[150px] rounded-xl lg:w-[400px]">
+                        <div class="lg:flex lg:justify-between mb-3">
+                            <h1 class="text-[#64FFDA] text-xl font-semibold">Higher Secondary Education</h1>
+                            <p class="text-[#b0bcc8] text-md">2021 - 2023</p>
+                        </div>
+                        <p class="text-[#b0bcc8] text-md">Viswasai Jr College, Nellore</p>
+                        <p class="text-[#b0bcc8] text-md">Grade: 9.8 GPA</p>
+                    </div>
+                </div>
+
+                <!-- Secondary Education -->
+                <div class="flex">
+                    <!-- Timeline -->
+                    <div class="relative flex flex-col items-center mr-6">
+                        <!-- Dot -->
+                        <div class="absolute top-1/2 transform -translate-y-1/2 w-2 h-2 bg-[#64FFDA] rounded-full"></div>
+                        <!-- Vertical Line -->
+                        <div class="absolute top-0 bottom-0 w-px bg-[#64FFDA]"></div>
+                    </div>
+                    <!-- Card -->
+                    <div class="bg-[#112240] p-3 mb-3 lg:m-3 lg:h-[150px] rounded-xl lg:w-[400px]">
+                        <div class="lg:flex lg:justify-between mb-3">
+                            <h1 class="text-[#64FFDA] text-xl font-semibold">Secondary Education</h1>
+                            <p class="text-[#b0bcc8] text-md">2020 - 2021</p>
+                        </div>
+                        <p class="text-[#b0bcc8] text-md">Roshini Ratnam EM High School, Nellore</p>
+                        <p class="text-[#b0bcc8] text-md">Grade: 10.0 GPA</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience -->
+            <div class="flex flex-col mt-[80px]">
+                <!-- Heading -->
+                <div class="flex items-center mb-3">
+                    <i class="fa-solid fa-briefcase text-[#64FFDA] text-[26px] mr-3"></i>
+                    <h1 class="text-[#64FFDA] text-[26px] font-semibold">Experience</h1>
+                </div>
+                <!-- GDG -->
+                <div class="flex">
+                    <!-- Timeline -->
+                    <div class="relative flex flex-col items-center mr-6">
+                        <!-- Dot -->
+                        <div class="absolute top-1/2 transform -translate-y-1/2 w-2 h-2 bg-[#64FFDA] rounded-full"></div>
+                        <!-- Vertical Line -->
+                        <div class="absolute top-0 bottom-0 w-px bg-[#64FFDA]"></div>
+                    </div>
+                    <!-- Card -->
+                    <div class="bg-[#112240] p-3 mb-3 lg:m-3 lg:h-[200px] rounded-xl lg:w-[400px]">
+                        <div class="lg:flex lg:justify-between mb-2">
+                            <h1 class="text-[#64FFDA] text-xl font-semibold">Web/App Dev. Lead</h1>
+                            <p class="text-[#b0bcc8] text-md">Sep 2024 - Present</p>
+                        </div>
+                        <p class="text-[#b0bcc8] text-lg font-semibold">GDG On-Campus @ Narayana Engineering College, Nellore</p>
+                        <p class="text-[#b0bcc8] text-md">
+                            Contributed to GDG by developing the leaderboard, enhancing my leadership qualities and
+                            overall web development skills.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Technical Project Intern -->
+                <div class="flex">
+                    <!-- Timeline -->
+                    <div class="relative flex flex-col items-center mr-6">
+                        <!-- Dot -->
+                        <div class="absolute top-1/2 transform -translate-y-1/2 w-2 h-2 bg-[#64FFDA] rounded-full"></div>
+                        <!-- Vertical Line -->
+                        <div class="absolute top-0 bottom-0 w-px bg-[#64FFDA]"></div>
+                    </div>
+                    <!-- Card -->
+                    <div class="bg-[#112240] p-3 mb-3 lg:m-3 lg:h-[220px] rounded-xl lg:w-[400px]">
+                        <div class="lg:flex lg:justify-between mb-2">
+                            <h1 class="text-[#64FFDA] text-xl font-semibold">Technical Project Intern</h1>
+                            <p class="text-[#b0bcc8] text-md">June 2024</p>
+                        </div>
+                        <p class="text-[#b0bcc8] text-lg font-semibold">NxtWave Disruptive Technologies</p>
+                        <p class="text-[#b0bcc8] text-md">
+                            Worked on an innovative web development project that expanded my front-end development skills,
+                            enhanced my problem-solving abilities, and provided insights into a professional work environment.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Teaching Assistant -->
+                <div class="flex">
+                    <!-- Timeline -->
+                    <div class="relative flex flex-col items-center mr-6">
+                        <!-- Dot -->
+                        <div class="absolute top-1/2 transform -translate-y-1/2 w-2 h-2 bg-[#64FFDA] rounded-full"></div>
+                        <!-- Vertical Line -->
+                        <div class="absolute top-0 bottom-0 w-px bg-[#64FFDA]"></div>
+                    </div>
+                    <!-- Card -->
+                    <div class="bg-[#112240] p-3 mb-3 lg:m-3 lg:h-[200px] rounded-xl lg:w-[400px]">
+                        <div class="lg:flex lg:justify-between mb-2">
+                            <h1 class="text-[#64FFDA] text-xl font-semibold">Teaching Assistant</h1>
+                            <p class="text-[#b0bcc8] text-md">May 2024 - Present</p>
+                        </div>
+                        <p class="text-[#b0bcc8] text-lg font-semibold">NxtWave Disruptive Technologies</p>
+                        <p class="text-[#b0bcc8] text-md">
+                            Assisted fellow students in debugging and resolving doubts while achieving recognition
+                            for resolving 500+ discussions and ranking 3rd in the NxtWave TA Streak Challenge.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Certificates section -->
+    <section id="CertificatesSection">
+        <div class="pt-[80px] pb-[80px] lg:pt-[125px] lg:pb-[125px]">
+            <h1 class="text-[#64FFDA] text-3xl font-semibold">Certificates</h1>
+            <div>
+                <h1 class="text-[#b0bcc8] text-xl font-semibold my-3">Course Completion</h1>
+                <div class="grid lg:grid-cols-4 grid-cols-1 justify-center space-y-4 lg:space-y-0 lg:gap-x-6">
+                    <!-- Build your own static website -->
+                    <div class="relative">
+                        <img src="https://res.cloudinary.com/dn9sdbv1o/image/upload/v1729411915/COURSE_COMPLETION_CERTIFICATE_BUILD_YOUR_OWN_STATIC_WEBSITE_wk7ihc.jpg" alt="BUILD_YOUR_OWN_STATIC_WEBSITE">
+                        <!-- Text on Hover -->
+                        <div class="absolute inset-0 bg-[#112240cc] flex flex-col justify-center items-center text-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <p class="text-[#b0bcc8] text-md mb-2 mx-3">
+                                I have successfully completed the <span class="font-semibold">Build your own static website</span> course at NxtWave.
+                            </p>
+                            <!-- Icon to trigger Bootstrap modal -->
+                            <i class="fa-solid fa-arrow-up-right-from-square text-[#64FFDA] text-lg cursor-pointer" data-toggle="modal" data-target="#certificateModal"></i>
+                        </div>
+                    </div>
+                    <!-- Bootstrap Modal -->
+                    <div class="modal fade" id="certificateModal" tabindex="-1" aria-labelledby="certificateModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="certificateModalLabel">Certificate</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- Certificate Image in Modal -->
+                                    <img src="https://res.cloudinary.com/dn9sdbv1o/image/upload/v1729411915/COURSE_COMPLETION_CERTIFICATE_BUILD_YOUR_OWN_STATIC_WEBSITE_wk7ihc.jpg" class="w-100" alt="Certificate">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="bg-[#0A192F] text-[#64FFDA] border-none py-2 px-3 rounded transition duration-300 hover:bg-[#3F8C9A] hover:text-white" data-dismiss="modal">
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Build Your Own Responsive Website -->
+                    <div class="relative">
+                        <img src="https://res.cloudinary.com/dn9sdbv1o/image/upload/v1729411916/COURSE_COMPLETION_CERTIFICATE_BUILD_YOUR_OWN_RESPONSIVE_WEBSITE_hgjeaj.jpg" alt="BUILD_YOUR_OWN_RESPONSIVE_WEBSITE">
+                        <!-- Text on Hover -->
+                        <div class="absolute inset-0 bg-[#112240cc] flex flex-col justify-center items-center text-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <p class="text-[#b0bcc8] text-md mb-2 mx-3">
+                                I have successfully completed the <span class="font-semibold">Build your own responsive website</span> course at NxtWave.
+                            </p>
+                            <!-- Icon to trigger Bootstrap modal -->
+                            <i class="fa-solid fa-arrow-up-right-from-square text-[#64FFDA] text-lg cursor-pointer" data-toggle="modal" data-target="#responsiveModal"></i>
+                        </div>
+                    </div>
+                    <!-- Bootstrap Modal for Responsive Website -->
+                    <div class="modal fade" id="responsiveModal" tabindex="-1" aria-labelledby="responsiveModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="responsiveModalLabel">Certificate</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- Certificate Image in Modal -->
+                                    <img src="https://res.cloudinary.com/dn9sdbv1o/image/upload/v1729411916/COURSE_COMPLETION_CERTIFICATE_BUILD_YOUR_OWN_RESPONSIVE_WEBSITE_hgjeaj.jpg" class="w-100" alt="Certificate">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="bg-[#0A192F] text-[#64FFDA] border-none py-2 px-3 rounded transition duration-300 hover:bg-[#3F8C9A] hover:text-white" data-dismiss="modal">
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Introduction to Databases -->
+                    <div class="relative">
+                        <img src="https://res.cloudinary.com/dn9sdbv1o/image/upload/v1729411915/COURSE_COMPLETION_CERTIFICATE_INTRODUCTION_TO_DATABASES_fgyfja.jpg" alt="INTRODUCTION_TO_DATABASES">
+
+                        <!-- Text on Hover -->
+                        <div class="absolute inset-0 bg-[#112240cc] flex flex-col justify-center items-center text-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <p class="text-[#b0bcc8] text-md mb-2 mx-3">
+                                I have successfully completed the <span class="font-semibold">Introduction to databases</span> course at NxtWave.
+                            </p>
+                            <!-- Icon to trigger Bootstrap modal -->
+                            <i class="fa-solid fa-arrow-up-right-from-square text-[#64FFDA] text-lg cursor-pointer" data-toggle="modal" data-target="#databasesModal"></i>
+                        </div>
+                    </div>
+
+                    <!-- Bootstrap Modal for Databases -->
+                    <div class="modal fade" id="databasesModal" tabindex="-1" aria-labelledby="databasesModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="databasesModalLabel">Certificate</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- Certificate Image in Modal -->
+                                    <img src="https://res.cloudinary.com/dn9sdbv1o/image/upload/v1729411915/COURSE_COMPLETION_CERTIFICATE_INTRODUCTION_TO_DATABASES_fgyfja.jpg" class="w-100" alt="Certificate">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="bg-[#0A192F] text-[#64FFDA] border-none py-2 px-3 rounded transition duration-300 hover:bg-[#3F8C9A] hover:text-white" data-dismiss="modal">
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div>
+                <h1 class="text-[#b0bcc8] text-xl font-semibold my-3">Workshops</h1>
+                <div class="grid lg:grid-cols-4 grid-cols-1 justify-center space-y-4 lg:space-y-0 lg:gap-x-6">
+                    <!-- DA Workshop -->
+                    <div class="relative">
+                        <img src="https://res.cloudinary.com/dn9sdbv1o/image/upload/v1729413114/DA_Workshop_Project_Completion_Certificate_page-0001_hzhcwq.jpg" class="" alt="DA_Workshop">
+                        <div class="absolute inset-0 bg-[#112240cc] flex flex-col justify-center items-center text-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <p class="text-[#b0bcc8] text-md mb-2 mx-3">
+                                I have successfully completed a hands-on project in the <span class="font-semibold">DA Mega Workshop</span> conducted by NxtWave.
+                            </p>
+                            <!-- Icon to trigger Bootstrap modal -->
+                            <i class="fa-solid fa-arrow-up-right-from-square text-[#64FFDA] text-lg cursor-pointer" data-toggle="modal" data-target="#databasesModal"></i>
+                        </div>
+                    </div>
+                    <!-- Bootstrap Modal for DA Workshop -->
+                    <div class="modal fade" id="databasesModal" tabindex="-1" aria-labelledby="databasesModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="databasesModalLabel">Certificate</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- Certificate Image in Modal -->
+                                    <img src="https://res.cloudinary.com/dn9sdbv1o/image/upload/v1729413114/DA_Workshop_Project_Completion_Certificate_page-0001_hzhcwq.jpg" class="w-100" alt="Certificate">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="bg-[#0A192F] text-[#64FFDA] border-none py-2 px-3 rounded transition duration-300 hover:bg-[#3F8C9A] hover:text-white" data-dismiss="modal">
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Gen AI Workshop -->
+                    <div class="relative">
+                        <img src="https://res.cloudinary.com/dn9sdbv1o/image/upload/v1729413114/Generative_AI_Workshop_Project_Completion_Certificate_page-0001_rnpire.jpg" class="" alt="Generative_AI_Workshop_1">
+                        <div class="absolute inset-0 bg-[#112240cc] flex flex-col justify-center items-center text-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <p class="text-[#b0bcc8] text-md mb-2 mx-3">
+                                I have successfully completed a hands-on project in the <span class="font-semibold">Generative AI Workshop</span> conducted by NxtWave.
+                            </p>
+                            <!-- Icon to trigger Bootstrap modal -->
+                            <i class="fa-solid fa-arrow-up-right-from-square text-[#64FFDA] text-lg cursor-pointer" data-toggle="modal" data-target="#genAIModal1"></i>
+                        </div>
+                    </div>
+                    <!-- Bootstrap Modal for Generative AI Workshop 1 -->
+                    <div class="modal fade" id="genAIModal1" tabindex="-1" aria-labelledby="genAIModalLabel1" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="genAIModalLabel1">Certificate</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="https://res.cloudinary.com/dn9sdbv1o/image/upload/v1729413114/Generative_AI_Workshop_Project_Completion_Certificate_page-0001_rnpire.jpg" class="w-100" alt="Certificate">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="bg-[#0A192F] text-[#64FFDA] border-none py-2 px-3 rounded transition duration-300 hover:bg-[#3F8C9A] hover:text-white" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- AWS Workshop -->
+                    <div class="relative">
+                        <img src="https://res.cloudinary.com/dn9sdbv1o/image/upload/v1729412693/AWS_Mega_Workshop_Project_Completion_pctiog.png" class="" alt="AWS_Mega_Workshop">
+                        <div class="absolute inset-0 bg-[#112240cc] flex flex-col justify-center items-center text-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <p class="text-[#b0bcc8] text-md mb-2 mx-3">
+                                I have successfully completed a hands-on project in the <span class="font-semibold">AWS Mega Workshop</span> conducted by NxtWave.
+                            </p>
+                            <!-- Icon to trigger Bootstrap modal -->
+                            <i class="fa-solid fa-arrow-up-right-from-square text-[#64FFDA] text-lg cursor-pointer" data-toggle="modal" data-target="#awsModal"></i>
+                        </div>
+                    </div>
+                    <!-- Bootstrap Modal for AWS Mega Workshop -->
+                    <div class="modal fade" id="awsModal" tabindex="-1" aria-labelledby="awsModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="awsModalLabel">Certificate</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="https://res.cloudinary.com/dn9sdbv1o/image/upload/v1729412693/AWS_Mega_Workshop_Project_Completion_pctiog.png" class="w-100" alt="Certificate">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="bg-[#0A192F] text-[#64FFDA] border-none py-2 px-3 rounded transition duration-300 hover:bg-[#3F8C9A] hover:text-white" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gen AI Workshop 2 -->
+                    <div class="relative">
+                        <img src="https://res.cloudinary.com/dn9sdbv1o/image/upload/v1729412693/Generative_AI_Workshop_2.0_Project_Completion_Certificate_w3wvhg.png" class="" alt="Generative_AI_Workshop_2">
+                        <div class="absolute inset-0 bg-[#112240cc] flex flex-col justify-center items-center text-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <p class="text-[#b0bcc8] text-md mb-2 mx-3">
+                                I have successfully completed a hands-on project in the <span class="font-semibold">Generative AI Workshop 2.0</span> conducted by NxtWave.
+                            </p>
+                            <!-- Icon to trigger Bootstrap modal -->
+                            <i class="fa-solid fa-arrow-up-right-from-square text-[#64FFDA] text-lg cursor-pointer" data-toggle="modal" data-target="#genAIModal2"></i>
+                        </div>
+                    </div>
+                    <!-- Bootstrap Modal for Generative AI Workshop 2 -->
+                    <div class="modal fade" id="genAIModal2" tabindex="-1" aria-labelledby="genAIModalLabel2" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="genAIModalLabel2">Certificate</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="https://res.cloudinary.com/dn9sdbv1o/image/upload/v1729412693/Generative_AI_Workshop_2.0_Project_Completion_Certificate_w3wvhg.png" class="w-100" alt="Certificate">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="bg-[#0A192F] text-[#64FFDA] border-none py-2 px-3 rounded transition duration-300 hover:bg-[#3F8C9A] hover:text-white" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div>
+                <h1 class="text-[#b0bcc8] text-xl font-semibold my-3">Accomplishment</h1>
+                <div class="grid lg:grid-cols-4 grid-cols-1 justify-center space-y-4 lg:space-y-0 lg:gap-x-6">
+                    <!-- TA Streak Challenge -->
+                    <div class="relative">
+                        <img src="https://res.cloudinary.com/dn9sdbv1o/image/upload/v1729415574/3rd_Winner_TA_Streak_challenge_1_unwvnq.png" class="" alt="3rd_Winner_TA_Streak_challenge">
+                        <div class="absolute inset-0 bg-[#112240cc] flex flex-col justify-center items-center text-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <p class="text-[#b0bcc8] text-md mb-2 mx-3">
+                                Secured <span class="font-semibold">3rd Place</span> in the TA Streak Challenge by solving 380+ doubts, conducted by NxtWave.
+                            </p>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-[#64FFDA] text-lg cursor-pointer" data-toggle="modal" data-target="#taStreakModal"></i>
+                        </div>
+                    </div>
+                    <!-- Bootstrap Modal for TA Streak Challenge -->
+                    <div class="modal fade" id="taStreakModal" tabindex="-1" aria-labelledby="taStreakModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="taStreakModalLabel">Certificate</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="https://res.cloudinary.com/dn9sdbv1o/image/upload/v1729418979/3rd_Winner_TA_Streak_challenge_cpzc0k.png" class="w-100" alt="Certificate">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="bg-[#0A192F] text-[#64FFDA] border-none py-2 px-3 rounded transition duration-300 hover:bg-[#3F8C9A] hover:text-white" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TA Certificate of Appreciation -->
+                    <div class="relative">
+                        <img src="https://res.cloudinary.com/dn9sdbv1o/image/upload/v1729412693/certificate_of_appreciation_TA_wo9bma.png" class="" alt="appreciation_TA">
+                        <div class="absolute inset-0 bg-[#112240cc] flex flex-col justify-center items-center text-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <p class="text-[#b0bcc8] text-md mb-2 mx-3">
+                                Received a <span class="font-semibold">Certificate of Appreciation</span> for completing 500+ doubts and being TA of the Week twice, and TA of the Month once at NxtWave.
+                            </p>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-[#64FFDA] text-lg cursor-pointer" data-toggle="modal" data-target="#taAppreciationModal"></i>
+                        </div>
+                    </div>
+                    <!-- Bootstrap Modal for Certificate of Appreciation -->
+                    <div class="modal fade" id="taAppreciationModal" tabindex="-1" aria-labelledby="taAppreciationModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="taAppreciationModalLabel">Certificate</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="https://res.cloudinary.com/dn9sdbv1o/image/upload/v1729412693/certificate_of_appreciation_TA_wo9bma.png" class="w-100" alt="Certificate">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="bg-[#0A192F] text-[#64FFDA] border-none py-2 px-3 rounded transition duration-300 hover:bg-[#3F8C9A] hover:text-white" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 7 Under 7 Challenge -->
+                    <div class="relative">
+                        <img src="https://res.cloudinary.com/dn9sdbv1o/image/upload/v1729412693/CERTIFICATE_OF_ACCOMPLISHMENT_7_UNDER_7_CHALLENGE_aei9en.png" class="" alt="7_UNDER_7_CHALLENGE">
+                        <div class="absolute inset-0 bg-[#112240cc] flex flex-col justify-center items-center text-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <p class="text-[#b0bcc8] text-md mb-2 mx-3">
+                                Successfully completed the <span class="font-semibold">7 Under 7 Challenge</span> and earned a Certificate of Accomplishment from NxtWave.
+                            </p>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-[#64FFDA] text-lg cursor-pointer" data-toggle="modal" data-target="#sevenUnder7Modal"></i>
+                        </div>
+                    </div>
+                    <!-- Bootstrap Modal for 7 Under 7 Challenge -->
+                    <div class="modal fade" id="sevenUnder7Modal" tabindex="-1" aria-labelledby="sevenUnder7ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="sevenUnder7ModalLabel">Certificate</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="https://res.cloudinary.com/dn9sdbv1o/image/upload/v1729412693/CERTIFICATE_OF_ACCOMPLISHMENT_7_UNDER_7_CHALLENGE_aei9en.png" class="w-100" alt="Certificate">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="bg-[#0A192F] text-[#64FFDA] border-none py-2 px-3 rounded transition duration-300 hover:bg-[#3F8C9A] hover:text-white" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Contact Me Section -->
+    <section id="ContactSection" class="pt-[80px] pb-[80px] lg:pt-[125px] lg:pb-[125px]">
+        <h1 class="text-[#64FFDA] text-3xl font-semibold mb-4 text-center">Get in Touch</h1>
+        <!-- Contact Me Form -->
+        <div class="bg-[#2C3E50] rounded-xl lg:w-3/5 m-auto">
+            <div class="flex p-3 p-lg-5 flex-col justify-center items-center h-32 bg-[#112240] rounded-t-xl">
+                <p class="text-white opacity-50 lg:w-[65%] text-center">Have a project in mind? Let’s discuss how we can work together!</p>
+            </div>
+
+            <form class="p-3 p-lg-5">
+                <div class="mb-4">
+                    <label for="full_name" class="block mb-2 text-sm text-white">Full Name</label>
+                    <input type="text" name="name" id="full_name" placeholder="John Doe" required class="w-full px-3 py-2 placeholder-[#8f8f8f] bg-[#d9d9d9] border border-gray-300 rounded-md text-sm focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
+                </div>
+
+                <div class="mb-4">
+                    <label for="email" class="block mb-2 text-sm text-white">Email Address</label>
+                    <input type="email" name="email" id="email" placeholder="you@company.com" required class="w-full px-3 py-2 placeholder-[#8f8f8f] bg-[#d9d9d9] border border-gray-300 rounded-md text-sm focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
+                </div>
+
+                <div class="mb-4">
+                    <label for="message" class="block mb-2 text-sm text-white">Your Message</label>
+                    <textarea rows="4" name="message" id="message" placeholder="Your Message" required class="w-full h-28 px-3 py-2 placeholder-[#8f8f8f] bg-[#d9d9d9] border border-gray-300 rounded-md text-sm focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300"></textarea>
+                </div>
+
+                <div class="mb-3 flex justify-center">
+                    <button type="submit" class="w-1/2 py-2 bg-[#112240] text-[#64FFDA] border-2 border-[#64FFDA] rounded-md transition duration-300 hover:bg-[#3F8C9A] hover:text-white focus:bg-indigo-600 focus:outline-none">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </div>
+        <!-- Social Media Links -->
+        <div class="flex justify-center mt-4">
+            <!-- Email -->
+            <div>
+                <a href="mailto:mramya0406@gmail.com" target="_blank">
+                    <i class="fa-solid fa-envelope text-[#64FFDA] text-2xl cursor-pointer mr-5"></i>
+                </a>
+            </div>
+            <!-- LinkedIn -->
+            <div>
+                <a href="https://www.linkedin.com/in/ramyasree-m/" target="_blank">
+                    <i class="fa-brands fa-linkedin text-[#64FFDA] text-2xl cursor-pointer mr-5"></i>
+                </a>
+            </div>
+            <!-- GitHub -->
+            <div>
+                <a href="https://github.com/ramya1106" target="_blank">
+                    <i class="fa-brands fa-github text-[#64FFDA] text-2xl cursor-pointer"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p class="text-[#b0bcc8] text-center text-sm lg:text-md mb-5">- Crafted with passion by Ramya Sree Mamidi -</p>
+    </footer>
+
+</body>
+
+</html>e
